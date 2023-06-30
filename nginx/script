@@ -1,0 +1,3 @@
+cp ./nginx.conf /etc/nginx/
+cp ./mime.types /etc/nginx/
+nginx -g "daemon off;"

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<!-- <meta name="viewport" content="width=device-width" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
+
+<style>
+	*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Jost Variable';
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+}
+
+:root {
+  --darker: #18181f;
+  --dark: #22222c;
+  --bright: #fffcf3;
+  --brighter: #ffffff;
+  
+  --butt_on: #f1eee5;
+  --button: #fff0b5;
+  /*--button: #b7ff8d;*/
+
+  --back1: var(--darker);
+  --back2: var(--dark);
+  --front: var(--bright);
+
+  --hover: #333341;
+  --shover: #424255;
+  --text: #656581;
+}
+.darkmode {
+  --back1: var(--bright);
+  --back2: var(--bright);
+  --front: var(--dark);
+  background-color: var(--back1);
+  color: var(--front);
+  
+  --hover: #e7e4db;
+  --shover: #cecbc4;
+  --text: #a3a09b;
+  --button: #8598f0;
+  --butt_on: #444448;
+}
+
+.outlined {
+  border: 2px solid var(--front);
+  border-radius: 20px;
+}
+
+.inverted {
+  color: var(--back1);
+  background-color: var(--front);
+}
+
+button {
+  background-color: var(--butt_on);
+  color: var(--back1);
+  /*border: 2px solid var(--front);*/
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+html, body {
+  max-height: 100%;
+  background-color: var(--back1);
+  color: var(--front);
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+a {
+  font-size: 1.3rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  transition: font-weight 0.3s ease;
+}
+
+a:hover {
+  font-weight: 600;
+
+}
+
+a:link, a:visited {
+  color: inherit;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+</style>
