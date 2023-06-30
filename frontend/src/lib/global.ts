@@ -2,8 +2,8 @@ import type { Socket } from 'socket.io-client';
 import { writable, type Writable } from 'svelte/store';
 import { encrypt } from './Crypter';
 
-export var BACKEND_HOST		: string = "http://localhost:3000/";
-export var FRONTEND_HOST	: string = "http://localhost";
+export var BACKEND_HOST		: string = "http://pongroyale.com:3000/";
+export var FRONTEND_HOST	: string = "http://pongroyale.com";
 
 const all = {
     user: null as null | any,
